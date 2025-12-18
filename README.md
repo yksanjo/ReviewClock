@@ -1,6 +1,13 @@
-# Code Review Time Tracker
+# ReviewClock ⏱️
 
-A Chrome extension that tracks how long pull requests sit in review. Get insights into your team's code review velocity and identify bottlenecks.
+> **Code Review Time Tracker** - Track how long pull requests sit in review. Get insights into your team's code review velocity and identify bottlenecks with this powerful Chrome extension.
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Chrome Web Store](https://img.shields.io/badge/Chrome-Extension-4285F4?logo=google-chrome)](https://chrome.google.com/webstore)
+[![Status: Active](https://img.shields.io/badge/status-active-success.svg)](https://github.com/yksanjo/ReviewClock)
+[![GitHub stars](https://img.shields.io/github/stars/yksanjo/ReviewClock?style=social)](https://github.com/yksanjo/ReviewClock)
+
+**ReviewClock** automatically tracks code review times on GitHub, helping you understand your team's review velocity, identify bottlenecks, and improve your development workflow.
 
 ## Features
 
