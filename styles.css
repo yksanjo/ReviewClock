@@ -1,0 +1,25 @@
+.review-time-tracker {
+  margin-right: 8px;
+}
+
+.review-time-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 8px;
+  background: #f6f8fa;
+  border: 1px solid #d1d5da;
+  border-radius: 6px;
+  font-size: 12px;
+}
+
+.review-time-label {
+  margin-right: 4px;
+  color: #586069;
+}
+
+.review-time-value {
+  font-weight: 600;
+  color: #24292e;
+}
+
+

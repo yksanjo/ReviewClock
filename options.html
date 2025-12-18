@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Code Review Time Tracker - Settings</title>
+  <style>
+    body {
+      width: 500px;
+      padding: 20px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+    h1 {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+    .setting {
+      margin: 16px 0;
+    }
+    label {
+      display: block;
+      margin-bottom: 4px;
+      font-weight: 500;
+    }
+    input, select {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+    button {
+      background: #0366d6;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 16px;
+    }
+    button:hover {
+      background: #0256c2;
+    }
+    .status {
+      margin-top: 16px;
+      padding: 8px;
+      border-radius: 4px;
+      display: none;
+    }
+    .status.success {
+      background: #d4edda;
+      color: #155724;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <h1>Code Review Time Tracker Settings</h1>
+  
+  <div class="setting">
+    <label for="stale-threshold">Stale PR Threshold (hours)</label>
+    <input type="number" id="stale-threshold" min="1" value="48">
+  </div>
+  
+  <div class="setting">
+    <label for="notifications">Enable Notifications</label>
+    <select id="notifications">
+      <option value="true">Enabled</option>
+      <option value="false">Disabled</option>
+    </select>
+  </div>
+  
+  <div class="setting">
+    <label for="github-token">GitHub Token (optional, for private repos)</label>
+    <input type="password" id="github-token" placeholder="ghp_...">
+  </div>
+  
+  <button id="save-btn">Save Settings</button>
+  
+  <div id="status" class="status"></div>
+  
+  <script src="options.js"></script>
+</body>
+</html>
+
+
